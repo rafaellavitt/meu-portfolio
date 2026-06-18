@@ -1,0 +1,71 @@
+/* Estilos gerais */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* fonte geral */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+body{
+    background-color: #181717;
+    height: 100vh;
+}
+
+img{
+    width: 60px;
+    display: block;
+}
+.interface{
+    max-width: 150px;
+    margin: 0 auto;
+} 
+/*Estilo do cabeçalho */
+header{
+    padding: 40px 4%;
+    display: flex;
+    box-sizing: border-box; 
+    justify-content: center;
+}
+header > .interface{
+    max-width: 1280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    margin: 0 20px;
+}
+header .menu-desktop ul{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+/* links do menu */
+header a{
+    color: #f8faed;
+    text-decoration: none;
+    display: inline-block;
+}
+header nav ul{
+    list-style-type: none;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+header .btn-contato button{
+    padding: 10px 15px;
+    font-size: 13px;
+    font-weight: 500;
+    background-color:#f8faed;
+    border: 0;
+    border-radius: 80px;
+    cursor: pointer;
+}
+header a:hover{
+    /* quero mudar as cores depois */     
+    transform: scale(1.08);
+    transition: all 0.5s ease;
+}
