@@ -25,7 +25,7 @@ img{
 }
 .flex{
     display: flex;
-    gap: 90px;
+    gap: 50px;
 }
 .btn-contato button{
     padding: 10px 15px;
@@ -36,6 +36,18 @@ img{
     border-radius: 80px;
     cursor: pointer;    
 }
+h2.titulo{ /* titulo especialidades */
+    color:#f8faed;
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 200px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+html{
+    scroll-behavior: smooth;
+}
+
 /*Estilo do cabeçalho */
 header{
     padding: 40px 4%;
@@ -71,12 +83,12 @@ header nav ul li{
 }
 header a:hover{
     /* quero mudar as cores depois */     
-    transform: scale(1.05);
-    transition: all 0.4s ease;
+    transform: scale(1.07);
+    transition: all 0.6s ease;
 }
 .btn-contato button:hover{
     box-shadow: 0px 0px 10px #f8faed;
-    transform: scale(1.05);
+    transform: scale(1.04);
     transition: all 0.4s ease;
 }
 
@@ -106,6 +118,7 @@ section.topo-do-site .flex{ /* txt e botão do topo */
     margin-right: 90px;
     border-radius: 5px 60px 5px;
     animation: flutuar 2s ease-in-out infinite alternate;
+    filter: drop-shadow(0px 5px 5px #000000);
 }
 @keyframes flutuar{
     0%{
@@ -115,3 +128,39 @@ section.topo-do-site .flex{ /* txt e botão do topo */
         top: 30px;
     }
 }
+
+/* Estilo especialidades */
+section .especialidades{
+    padding: 40px 4%;
+    display: flex;
+    gap: 10px;
+}
+.especialidades .esp-box{ /* todas as caixas */
+    color: #f8faed;
+    width: 100%;
+    max-width: 200px;
+    padding: 35px 30px;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 300px;
+    border: 2px solid #f8faed;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+.especialidades .esp-box:hover{
+    background-color: #000000;
+    transform: scale(1.05);
+    transition: all 0.4s ease;
+}
+.especialidades .esp-box i{ /* ícone dentro de cada caixa */
+    font-size: 50px;
+    color: #f8faed;
+    display: block;
+    margin-bottom: 10px;
+}
+.especialidades .esp-box h3{
+    font-size: 20px;
+    margin: 0;
+}
+
