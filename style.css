@@ -36,10 +36,12 @@ img{
     border-radius: 80px;
     cursor: pointer;    
 }
-h2.titulo{ /* titulo especialidades */
+h2.titulo{ /* titulos */
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
     color:#f8faed;
-    font-size: 30px;
-    font-weight: 400;
+    font-size: 25px;
+    font-weight: 600;
     margin-top: 200px;
     margin-bottom: 30px;
     text-align: center;
@@ -162,5 +164,19 @@ section .especialidades{
 .especialidades .esp-box h3{
     font-size: 20px;
     margin: 0;
+}
+section .sobre{
+    padding: 40px 4%;
+    display: flex;
+    gap: 10px;
+}
+section .sobre .flex{ /* txt e botão do topo */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.txt-sobre p{
+    color: #fff;
+    margin: 40px 0;
 }
 
