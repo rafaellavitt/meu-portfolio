@@ -27,7 +27,7 @@ function MagneticButton({ children, className = "" }) {
         transform: `translate(${x}px, ${y}px)`,
         transition: "transform 0.15s ease-out, background-color 0.8s ease, color 0.2s ease",
       }}
-      className={`px-9 py-5 rounded-4xl border border-[#bc96e6] text-[#bc96e6] font-medium hover:bg-[#bc96e6] hover:text-[#181717] ${className}`}
+      className={`px-9 py-5 rounded-4xl border border-[#bc96e6] text-[#bc96e6] font-medium hover:bg-offwhite hover:text-[#181717] ${className}`}
     >
       {children}
     </button>
