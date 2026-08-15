@@ -2,6 +2,8 @@ import { useState } from 'react'
 import HoverUnderline from "./components/HoverUnderline";
 import MagneticButton from './components/MagneticButton';
 import MouseGlow from "./components/MouseGlow";
+import MagneticCard from "./components/MagneticCard.jsx";
+import Marquee from "./components/Marquee.jsx";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -42,7 +44,7 @@ function App() {
                             RAFAELLA VITORIA
                             </h1>
                             <div className="h2 my-6">
-                                <h2 className="typewriter overflow-hidden whitespace-nowrap border-r-2 border-r-[#efede3] text-[#efede3] my-6 text-3xl tracking-wide">
+                                <h2 className="typewriter overflow-hidden whitespace-nowrap border-r-2 text-offwhite my-6 text-3xl tracking-wide">
                                 Estudante de Análise de Desenvolvimento de Sistemas
                                 </h2>
                             </div>
@@ -63,9 +65,9 @@ function App() {
                             logic for Vendor Invoice Management across 25+ geographies, supporting 90% automated processing, and built a custom SAP Fiori launchpad tile used by 10,000+ users. deployed on AWS. My stack: React, Node.js, Supabase, and cloud deployment platforms.
                             </p>
                         <div className="shrink-0 flex items-center mr-35 mb-35">
-                            <div className="w-[500px] h-[400px] bg-primary rounded-2xl flex items-center justify-center">
+                            <div className="w-125 h-100 bg-primary rounded-2xl flex items-center justify-center">
                                 <svg
-                                    width="96"
+                                    width="96" 
                                     height="96"
                                     viewBox="0 0 96 96"
                                     fill="none"
@@ -73,17 +75,17 @@ function App() {
                                     aria-hidden="true"
                                 >
                                     <polyline
-                                    points="34,26 14,48 34,70"
+                                    points="28,26 8,48 28,70"
                                     stroke="#010101"
-                                    strokeWidth="5"
+                                    strokeWidth="8"
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
                                     fill="none"
                                     />
                                     <polyline
-                                    points="62,26 82,48 62,70"
+                                    points="68,26 88,48 68,70"
                                     stroke="#010101"
-                                    strokeWidth="5"
+                                    strokeWidth="8"
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
                                     fill="none"
@@ -94,7 +96,7 @@ function App() {
                                     x2="40"
                                     y2="74"
                                     stroke="#010101"
-                                    strokeWidth="4.5"
+                                    strokeWidth="6"
                                     strokeLinecap="round"
                                     />
                                 </svg>
@@ -103,23 +105,31 @@ function App() {
                         </div>
                 </section>
                 {/* especialidades */}
-                <section id="especialidades" className="especialidades py-10 px-[4%] flex gap-[10px]">
-                        <h2 className="titulo text-[#fff]">MINHAS ESPECIALIDADES</h2>
-                        <div className="flex text-primary w-[100%] max-w-[200%] text-center py-[35px] px-[30px] m-auto mt-[30px] mb-[300px] border-2 border-primary rounded-[20px] box-border ">
-                            <div className="esp-box hover:bg-black hover:scale-105 transition-all duration-400 ease-in-out"> {/* box html */}
-                                <i className="bi bi-filetype-html text-primary block mb-[10px]"></i>
-                                    <h3 className ="text-[20px] m-[0]">HTML</h3>
-                            </div> {/* fechando esp-box */}
-                                <div className="esp-box"> 
-                                    <i className="bi bi-filetype-css text-primary block mb-[10px]"></i>
-                                        <h3>CSS</h3>
-                            </div> {/* fechando esp-box */}
-                                <div className="esp-box hover:bg-black hover:scale-105 transition-all duration-400 ease"> 
-                                    <i className="bi bi-filetype-js text-primary block mb-[10px]"></i>
-                                        <h3>JavaScript</h3>                            
-                                </div> {/* fechando esp-box */}
-                        </div> {/* fechando flex */}
-                </section>
+                <MouseGlow>
+                    <section id="especialidades" className="py-10">
+                        <h2 className="text-offwhite font-archivoblack text-5xl font-medium text-center pt-30 pb-20">MINHAS ESPECIALIDADES</h2>
+                        <div className="mb-100 grid grid-cols-[repeat(3,14rem)] justify-center gap-x-40 gap-y-8">
+                            <MagneticCard className="w-56 h-56">
+                                <span className="text-primary text-3xl text-center">React</span>
+                            </MagneticCard>
+                            <MagneticCard className="w-56 h-56">
+                                <span className="text-primary text-3xl text-center">JavaScript</span>
+                            </MagneticCard>
+                            <MagneticCard className="w-56 h-56">
+                                <span className="text-primary text-3xl text-center">Node.js</span>
+                            </MagneticCard>
+                            <MagneticCard className="w-56 h-56">
+                                <span className="text-primary text-3xl text-center">Tailwind CSS</span>
+                            </MagneticCard>
+                            <MagneticCard className="w-56 h-56">
+                                <span className="text-primary text-3xl text-center">Git</span>
+                            </MagneticCard>
+                            <MagneticCard className="w-56 h-56">
+                                <span className="text-primary text-3xl text-center">GitHub</span>
+                            </MagneticCard>
+                        </div>
+                    </section>
+                </MouseGlow>
             </main>
         </MouseGlow>
     </div>
