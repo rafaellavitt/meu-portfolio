@@ -10,7 +10,6 @@
   --color-primary: #bc96e6;
   --color-section-sobre: #010101;
 }
-
 @layer base {
   html {
     scroll-behavior: smooth;
