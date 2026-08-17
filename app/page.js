@@ -4,6 +4,7 @@ import HoverUnderline from "./components/HoverUnderline";
 import MagneticButton from './components/MagneticButton';
 import MouseGlow from "./components/Mouseglow";
 import MagneticCard from "./components/MagneticCard.jsx";
+import { TextScramble } from './components/TextScramble';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -106,26 +107,26 @@ function App() {
                 </section>
                 {/* especialidades */}
                 <MouseGlow>
-                    <section id="especialidades" className="py-10">
-                        <h2 className="text-offwhite font-archivoblack text-5xl font-medium text-center pt-30 pb-20">MINHAS ESPECIALIDADES</h2>
-                        <div className="mb-100 grid grid-cols-[repeat(3,14rem)] justify-center gap-x-40 gap-y-8">
-                            <MagneticCard className="w-56 h-56">
-                                <span className="text-primary text-3xl text-center">React</span>
+                    <section id="especialidades" className="bg-[#0f071a] py-10">
+                        <TextScramble className="text-offwhite font-archivoblack text-5xl font-medium text-center pt-25 pb-15">MINHAS ESPECIALIDADES</TextScramble>
+                        <div className="mb-100 grid grid-cols-[repeat(3,14rem)] justify-center gap-x-40 gap-y-8 mr-30">
+                            <MagneticCard className="w-80 h-50">
+                                <span className="text-offwhite text-3xl text-center">React</span>
                             </MagneticCard>
-                            <MagneticCard className="w-56 h-56">
-                                <span className="text-primary text-3xl text-center">JavaScript</span>
+                            <MagneticCard className="w-80 h-50">
+                                <span className="text-offwhite text-3xl text-center">Next . js</span>
                             </MagneticCard>
-                            <MagneticCard className="w-56 h-56">
-                                <span className="text-primary text-3xl text-center">Node.js</span>
+                            <MagneticCard className="w-80 h-50">
+                                <span className="text-offwhite text-3xl text-center">Git</span>
                             </MagneticCard>
-                            <MagneticCard className="w-56 h-56">
-                                <span className="text-primary text-3xl text-center">Tailwind CSS</span>
+                            <MagneticCard className="w-80 h-50">
+                                <span className="text-offwhite text-3xl text-center">Tailwind CSS</span>
                             </MagneticCard>
-                            <MagneticCard className="w-56 h-56">
-                                <span className="text-primary text-3xl text-center">Git</span>
+                            <MagneticCard className="w-80 h-50">
+                                <span className="text-offwhite text-3xl text-center">JavaScript</span>
                             </MagneticCard>
-                            <MagneticCard className="w-56 h-56">
-                                <span className="text-primary text-3xl text-center">GitHub</span>
+                            <MagneticCard className="w-80 h-50">
+                                <span className="text-offwhite text-3xl text-center">GitHub</span>
                             </MagneticCard>
                         </div>
                     </section>
