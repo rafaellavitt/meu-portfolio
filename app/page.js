@@ -4,7 +4,6 @@ import HoverUnderline from "./components/HoverUnderline";
 import MagneticButton from './components/MagneticButton';
 import MouseGlow from "./components/Mouseglow";
 import MagneticCard from "./components/MagneticCard.jsx";
-import Marquee from "./components/Marquee.jsx";
 
 function App() {
   const [count, setCount] = useState(0)
