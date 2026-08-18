@@ -6,18 +6,10 @@ Portfólio pessoal desenvolvido para apresentar minha trajetória como estudante
 Acesse: em breve
 
 # Tecnologias utilizadas
-Next.js
-React
-Tailwind CSS v4
+Next.js \
+React \
+Tailwind CSS v4 \
 clsx
-
-Estrutura do projeto
-app/
-  components/     → Componentes reutilizáveis (MagneticCard, MouseGlow, Marquee, etc.)
-  layout.jsx      → Layout raiz e metadados do site
-  page.jsx        → Página principal
-  globals.css     → Estilos globais e configuração de tema do Tailwind
-public/           → Arquivos estáticos
 
 # Rodando localmente
 bash
