@@ -11,19 +11,3 @@ React \
 Tailwind CSS v4 \
 clsx
 
-# Rodando localmente
-bash
-
-Clone o repositório
-git clone https://github.com/rafaellavitt/meu-portfolio.git
-
-Entre na pasta
-cd meu-portfolio
-
-Instale as dependências
-npm install
-
-Rode o servidor de desenvolvimento
-npm run dev
-
-O site estará disponível em http://localhost:3000.
